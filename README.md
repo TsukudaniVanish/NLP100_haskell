@@ -1,6 +1,6 @@
 # NLP Exercise 100 in Haskell
 this is my answer of NLP Exercise 100(https://nlp100.github.io/ja/about.html).
-
+To run NLP100.ipynb, you needs jupyter notebook with IHaskell.
 ### progress
 - [x] section 1
 - [] section 2
