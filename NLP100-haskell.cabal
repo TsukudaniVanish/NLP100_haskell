@@ -59,7 +59,7 @@ executable NLP100-haskell
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
-    -- other-modules:
+    other-modules: Chapter2
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
