@@ -69,3 +69,9 @@ p18 :: IO ()
 p18 = do
   rows <- sortBy (flip (\a b -> compare (words a !! 3) (words b !! 3))) <$> getPopularNamesRows
   mapM_ putStrLn rows
+
+p19 :: IO ()
+p19 = do
+  rows <- getPopularNamesRows
+  let counts = sortBy (flip (\a b -> compare (snd a) (snd b))) $ foldr (\row m -> let col1 = head $ words row in if col1 `elem` map fst m then map (\(s, c) -> (s, if s == col1 then c + 1 else c)) m else (col1, 1) : m) [] rows :: [(String, Int)]
+  mapM_ (\(s, _) -> let rs = filter (\r -> s == head (words r)) rows in mapM_ putStrLn rs) counts

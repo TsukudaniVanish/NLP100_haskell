@@ -1,6 +1,6 @@
 module Main where
 
-import Chapter2 (p10, p11, p12, p13, p14, p15, p16, p17, p18)
+import Chapter2 (p10, p11, p12, p13, p14, p15, p16, p17, p18, p19)
 import System.Environment
 
 data Chapter = Chapter2
@@ -35,6 +35,7 @@ runAnswer c n = case c of
     16 -> p16
     17 -> p17
     18 -> p18
+    19 -> p19
     _ -> undefined
 
 main :: IO ()
