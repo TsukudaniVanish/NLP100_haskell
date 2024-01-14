@@ -1,6 +1,6 @@
 {-# LANGUAGE BlockArguments #-}
 
-module Chapter2 where
+module NLP.Chapter2 where
 
 import Control.Monad (join)
 import Data.Function

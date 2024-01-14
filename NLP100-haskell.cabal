@@ -51,6 +51,12 @@ extra-doc-files:    CHANGELOG.md
 common warnings
     ghc-options: -Wall
 
+library 
+    default-language: Haskell2010
+    hs-source-dirs: src 
+    exposed-modules: NLP.Chapter2, NLP.Chapter3
+    build-depends:    base ^>=4.17.2.1
+
 executable NLP100-haskell
     -- Import common warning flags.
     import:           warnings
@@ -59,13 +65,13 @@ executable NLP100-haskell
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
-    other-modules: Chapter2
+    -- other-modules: 
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.17.2.1
+    build-depends:    base ^>=4.17.2.1, NLP100-haskell
 
     -- Directories containing source files.
     hs-source-dirs:   app

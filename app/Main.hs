@@ -1,6 +1,6 @@
 module Main where
 
-import Chapter2 (p10, p11, p12, p13, p14, p15, p16, p17, p18, p19)
+import NLP.Chapter2 (p10, p11, p12, p13, p14, p15, p16, p17, p18, p19)
 import System.Environment
 
 data Chapter = Chapter2
