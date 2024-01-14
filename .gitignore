@@ -6,3 +6,5 @@
 dist-newstyle/**
 .vscode
 *.txt
+*.gz
+*.json
